@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a{
+            text-decoration: none; 
+            color: inherit;
+
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+
+        .container{
+            background-image:url("https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+            background-size: cover;
+            border-radius: 20px;
+            background-repeat: no-repeat;
+            background-position: center;
+            border: dashed 3px black;
+            width: 400px;    
+            height: 100px;
+            display: flex;
+            flex: 1;
+            justify-content: center;
+            align-items: center; 
+            transition: width 0.5s ease, height 0.5s ease;
+
+            &:hover{
+                width: 500px;  
+                height: 150px; 
+            }
+
+        }
+
+        .custom-btn{
+            background-color: inherit;
+            font-weight: bold;
+            border: solid 2px black;
+            font-size: 20px;
+            transition: width 0.5s ease;
+            width: 50%;
+
+            &:hover{
+                font-weight: bold;
+                border-radius: 20px;
+                width: 40%;
+                
+            }
+        }
+
+        tr:nth-child(even){
+          background-color: rgb(40, 22, 204);  
+        }
+
+        tr:nth-child(odd){
+            background-color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+    <p>My most-used emoji are:</p>
+    <ol start="1">
+        <li>&#128030</li>
+        <li>&#128013</li>
+        <li>&#128077</li>
+    </ol>
+
+    <h3>Links</h3>
+   
+    <p>My favourite websites are:</p>
+  <ul>
+    <li><a href="">realpython.com</a></li>
+    <li><a href="">python.org</a></li>
+    <li><a href="">pypi.org</a></li>
+</ul>
+
+<div class="container">
+    <button class="custom-btn">CLICK ME 4 FUN</button>
+</div>
+<br><br>
+
+
+<table border="1">
+    <tr>
+        <th>Roll Number</th>
+        <th>First Name</th>
+        <th>Last name</th>
+        <th>Class</th>
+    </tr>
+    <tr>
+        <th>1</th>
+        <th>FN1</th>
+        <th>LN1</th>
+        <th>12th</th>
+    </tr>
+    <tr>
+        <th>2</th>
+        <th>FN2</th>
+        <th>LN2</th>
+        <th rowspan="2">11th</th>
+    </tr>
+    <tr>
+        <th>3</th>
+        <th colspan="2">FN3LN3</th>
+    </tr>
+</table>
+
+
+</body>
+</html>

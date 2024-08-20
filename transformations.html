@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transformations on Hover</title>
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            margin-bottom: 10px;
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+
+        .translate:hover { transform: translate(50px, 50px); }
+        .translateX:hover { transform: translateX(50px); }
+        .translateY:hover { transform: translateY(50px); }
+        .rotate:hover { transform: rotate(45deg); }
+        .rotateX:hover { transform: rotateX(45deg); }
+        .rotateY:hover { transform: rotateY(45deg); }
+        .rotateZ:hover { transform: rotateZ(45deg); }
+        .scale:hover { transform: scale(1.5); }
+        .scaleX:hover { transform: scaleX(1.5); }
+        .scaleY:hover { transform: scaleY(1.5); }
+        .skew:hover { transform: skew(20deg, 10deg); }
+        .skewX:hover { transform: skewX(20deg); }
+        .skewY:hover { transform: skewY(10deg); }
+        .matrix:hover { transform: matrix(1, 0.3, 0.3, 1, 0, 0); }
+        .perspective:hover { transform: perspective(200px) rotateX(30deg); }
+    </style>
+</head>
+<body>
+    <h1>CSS Transformations on Hover</h1>
+    <div class="container">
+        <div class="box translate">translate(50px, 50px)</div>
+        <div class="box translateX">translateX(50px)</div>
+        <div class="box translateY">translateY(50px)</div>
+        <div class="box rotate">rotate(45deg)</div>
+        <div class="box rotateX">rotateX(45deg)</div>
+        <div class="box rotateY">rotateY(45deg)</div>
+        <div class="box rotateZ">rotateZ(45deg)</div>
+        <div class="box scale">scale(1.5)</div>
+        <div class="box scaleX">scaleX(1.5)</div>
+        <div class="box scaleY">scaleY(1.5)</div>
+        <div class="box skew">skew(20deg, 10deg)</div>
+        <div class="box skewX">skewX(20deg)</div>
+        <div class="box skewY">skewY(10deg)</div>
+        <div class="box matrix">matrix(1, 0.3, 0.3, 1, 0, 0)</div>
+        <div class="box perspective">perspective(200px)</div>
+    </div>
+</body>
+</html>
